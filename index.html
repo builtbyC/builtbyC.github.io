@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Awesome Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chinmaya | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>Welcome to my new website hosted on GitHub Pages.</p>
+  <header>
+    <div class="container">
+      <h1>Chinmaya</h1>
+      <p class="title">Strategy & Analytics | AI-driven Innovation</p>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      Chinmaya is focused on strategy, analytics, and building the next generation of AI-driven platforms. 
+      With experience across healthcare, training simulations, and manufacturing, the work centers on 
+      blending data, technology, and business execution to create scalable solutions.
+    </p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Connect</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/kn-chk/" target="_blank">
+        Connect with me on LinkedIn
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chinmaya</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
