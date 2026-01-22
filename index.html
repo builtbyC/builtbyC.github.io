@@ -1,155 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Chinmaya Nagaraju — MS Business Analytics candidate (GPA 4.0). KPI design, dashboards, applied modeling."/>
-  <title>Chinmaya Nagaraju | Portfolio</title>
+  <meta name="description" content="Chinmaya Nagaraju — Product/Tech Analytics portfolio. KPIs, dashboards, modeling, and strategy." />
+  <title>Chinmaya | Portfolio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
     <div class="container header-grid">
-      <div>
-        <h1>Chinmaya Nagaraju</h1>
-        <p class="subtitle">Business Analytics (MS) | KPI Design • Dashboards • Applied Modeling</p>
-        <p class="meta">Montclair, NJ (NYC-commutable) • Available for in-person NYC</p>
+      <div class="hero">
+        <h1 class="name">Chinmaya</h1>
+        <p class="role">Product & Tech Analytics • Strategy • KPI Design</p>
+        <p class="summary">
+          Chinmaya focuses on turning ambiguous business questions into measurable KPIs,
+          clean datasets, and decision-ready dashboards.
+        </p>
 
         <div class="cta-row">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-          <a class="btn" href="https://www.linkedin.com/in/kn-chk/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/kn-chk/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="proof-strip" aria-label="Quick highlights">
+          <div class="proof-card">
+            <div class="proof-kicker">Focus</div>
+            <div class="proof-value">Metrics → Decisions</div>
+          </div>
+          <div class="proof-card">
+            <div class="proof-kicker">Stack</div>
+            <div class="proof-value">SQL • Python • Tableau</div>
+          </div>
+          <div class="proof-card">
+            <div class="proof-kicker">Style</div>
+            <div class="proof-value">Lean, product-minded</div>
+          </div>
         </div>
       </div>
 
-      <div class="proof-card" aria-label="Highlights">
-        <h2 class="card-title">Highlights</h2>
-        <ul class="bullets">
-          <li>MS Business Analytics candidate (GPA 4.0), expected May 2026</li>
-          <li>Tools: Python, SQL, Excel, Tableau / Power BI</li>
-          <li>Focus: KPI definitions, metric logic, reporting readiness</li>
-          <li>Experience: analytics frameworks + operations investigation</li>
-        </ul>
+      <div class="panel">
+        <div class="panel-top">
+          <h2 class="panel-title">Now</h2>
+          <!-- Light-mode groundwork (not enabled by default) -->
+          <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="theme-label">Dark</span>
+          </button>
+        </div>
+
+        <div class="panel-body">
+          <div class="panel-row">
+            <div class="label">Current</div>
+            <div class="value">MS Business Analytics (May 2026)</div>
+          </div>
+          <div class="panel-row">
+            <div class="label">Interested in</div>
+            <div class="value">Product analytics • Ops analytics • BI</div>
+          </div>
+          <div class="panel-row">
+            <div class="label">Location</div>
+            <div class="value">NYC-area</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="panel-note">
+            This portfolio is intentionally minimal: fast scan, clear proof, no fluff.
+          </p>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>
-        Chinmaya focuses on turning messy, ambiguous business questions into measurable KPIs, clean datasets,
-        and decision-ready dashboards. The work spans product and operations analytics, applied modeling,
-        and structured reporting that teams can actually run with.
-      </p>
-    </section>
-
-    <section id="projects" class="container section">
-      <div class="section-head">
-        <h2>Featured Projects</h2>
-        <p class="hint">Each project should include: problem, approach, results, and a link (GitHub, dashboard, or write-up).</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Supermarket Sales Analysis & Dashboarding</h3>
-          <p class="tags">Tableau • Python • Excel</p>
-          <p class="desc">
-            Built a regression model (R² = 0.89) to identify revenue drivers and produced an interactive Tableau dashboard
-            highlighting peak hours, spend distribution, and category performance.
+  <main id="main">
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            Chinmaya is focused on strategy, analytics, and building the next generation of AI-driven platforms.
+            With experience across healthcare, training simulations, and manufacturing, the work centers on
+            blending data, technology, and business execution to create scalable solutions.
           </p>
-          <div class="card-actions">
-            <a class="link" href="#" aria-label="Add project link">Add link</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Amazon Product Review Text Analytics</h3>
-          <p class="tags">Python • Pandas • NLTK • TextBlob</p>
-          <p class="desc">
-            Performed sentiment classification on 50K+ reviews, connecting sentiment signals to ratings and categories.
-            Produced visual summaries to explain drivers of customer satisfaction.
-          </p>
-          <div class="card-actions">
-            <a class="link" href="#" aria-label="Add project link">Add link</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>FreeFuse — KPI Frameworks & Metric Logic</h3>
-          <p class="tags">KPI Design • Documentation • Governance</p>
-          <p class="desc">
-            Defined KPI specifications (formulas, assumptions, cadence) and reviewed dashboards to remove misleading metrics,
-            improving reporting readiness and cross-team alignment.
-          </p>
-          <div class="card-actions">
-            <a class="link" href="#" aria-label="Add project link">Add link</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="container section">
-      <h2>Experience</h2>
-
-      <div class="timeline">
-        <div class="role">
-          <div class="role-top">
-            <h3>Business Analyst Intern — FreeFuse</h3>
-            <p class="role-meta">Oct 2025 – Present • Remote</p>
-          </div>
-          <ul>
-            <li>Translated ambiguous ideas into analytics questions, KPIs, and measurement frameworks.</li>
-            <li>Designed KPI definitions and metric logic for consistency and reporting readiness.</li>
-            <li>Reviewed dashboards to remove non-actionable or misleading indicators.</li>
-          </ul>
-        </div>
-
-        <div class="role">
-          <div class="role-top">
-            <h3>Investigation Specialist — Amazon</h3>
-            <p class="role-meta">Dec 2021 – Jun 2024 • Bengaluru, India</p>
-          </div>
-          <ul>
-            <li>Investigated high-volume fraud/abuse cases while meeting SLA and accuracy standards.</li>
-            <li>Built Excel/Sheets dashboards to track trends, throughput, and defect drivers.</li>
-            <li>Collaborated cross-functionally to refine investigation rules and escalation paths.</li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="skill">
-          <h3>Analytics</h3>
-          <p>SQL, Python, Excel; KPI design; funnels; cohort/retention analysis; hypothesis testing</p>
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Work</h2>
+          <p>Two to four strong artifacts beat ten vague ones. Each card should link to proof.</p>
         </div>
-        <div class="skill">
-          <h3>Visualization</h3>
-          <p>Tableau, Power BI; dashboards; distributions; reporting</p>
-        </div>
-        <div class="skill">
-          <h3>Methods</h3>
-          <p>Regression, clustering, decision trees, text analytics/NLP basics</p>
+
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-top">
+              <h3>Supermarket Sales — Model + Dashboard</h3>
+              <span class="pill">Tableau • Python</span>
+            </div>
+            <p class="card-desc">
+              Regression model + dashboard to identify revenue drivers, peak hours, and category performance.
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#" aria-label="Open project">Project</a>
+              <a class="link" href="#" aria-label="Open case study PDF">Case Study</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Amazon Reviews — Text Analytics</h3>
+              <span class="pill">Python • NLP</span>
+            </div>
+            <p class="card-desc">
+              Sentiment classification and insight extraction; clear visuals connecting sentiment to categories and ratings.
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#" aria-label="Open project">Project</a>
+              <a class="link" href="#" aria-label="Open notebook">Notebook</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>KPI Frameworks — Reporting Readiness</h3>
+              <span class="pill">Metrics • BI</span>
+            </div>
+            <p class="card-desc">
+              KPI definitions, metric logic, and dashboard review to remove misleading indicators and increase alignment.
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#" aria-label="Open write-up">Write-up</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="container section">
-      <h2>Connect</h2>
-      <div class="contact-row">
-        <a class="btn" href="mailto:chinmaya.nagaraju@gmail.com">chinmaya.nagaraju@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/kn-chk/" target="_blank" rel="noopener">LinkedIn</a>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Connect</h2>
+          <p>Best way to reach Chinmaya is LinkedIn.</p>
+        </div>
+
+        <div class="contact-row">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/kn-chk/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-secondary" href="mailto:chinmaya.nagaraju@gmail.com">Email</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <p>&copy; <span id="year"></span> Chinmaya Nagaraju</p>
-      <a class="link" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top</a>
+      <p>&copy; <span id="year"></span> Chinmaya</p>
+      <a class="link" href="#top">Back to top</a>
     </div>
   </footer>
 
